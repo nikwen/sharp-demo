@@ -1,6 +1,6 @@
 # sharp-demo
 
-Demonstrates an issue with svgs that take way too long to be resized and converted to png.
+Demonstrates an [issue](https://github.com/lovell/sharp/issues/1222) with svgs that take way too long to be resized and converted to png.
 
 ## Run
 
