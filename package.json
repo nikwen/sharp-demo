@@ -1,0 +1,9 @@
+{
+  "name": "sharp-demo",
+  "main": "index.js",
+  "author": "Niklas Wenzel <dev@nikwen.de>",
+  "license": "MIT",
+  "dependencies": {
+    "sharp": "0.20.2"
+  }
+}
