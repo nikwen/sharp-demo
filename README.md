@@ -17,6 +17,7 @@ Duration: 1 hour 55 minutes 46.02 seconds (for a single image!)
 * CPU: Intel Core i5-4570 CPU @ 3.20GHz × 4
 * RAM: 8GB
 * OS: Fedora 27 (Linux kernel 4.16.6)
+* Node.js: 8.11.1
 
 ## Observations
 
