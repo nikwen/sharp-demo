@@ -1,8 +1,8 @@
 # sharp-demo
 
-Demonstrates an [issue]() with resizing svg files and converting them to png if
+Demonstrates an [issue](https://github.com/lovell/sharp/issues/1421) with resizing svg files and converting them to png if
 
-* the image has a height and width specified in pixels and
+* the svg file has a height and a width specified in pixels and
 * the size it should be resized to is larger than these values.
 
 Then the resulting image is very pixelated.
