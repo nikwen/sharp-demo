@@ -10,16 +10,10 @@ run()
 
 async function run() {
     try {
-        console.time('sharp')
-
         await sharp('./image.svg')
-            .resize(192, 192)
-            .background({r: 0, g: 0, b: 0, alpha: 0})
-            .embed()
+            .resize(512, 512)
             .png()
-            .toBuffer()
-
-        console.timeEnd('sharp')
+            .toFile('out.png')
     } catch (err) {
         console.error(err)
     } finally {

@@ -1,6 +1,17 @@
 # sharp-demo
 
-Demonstrates an [issue](https://github.com/lovell/sharp/issues/1222) with svgs that take way too long to be resized and converted to png.
+Demonstrates an [issue]() with resizing svg files and converting them to png if
+
+* the image has a height and width specified in pixels and
+* the size it should be resized to is larger than these values.
+
+Then the resulting image is very pixelated.
+
+## Example
+
+The provided svg file has a specified height and width of 32px and it is being resized to 512px. Then it is really pixelated and blurry.
+
+Check out the file `output.png` to see the output.
 
 ## Run
 
@@ -8,21 +19,6 @@ Demonstrates an [issue](https://github.com/lovell/sharp/issues/1222) with svgs t
 npm install && node index.js
 ```
 
-## Run details
-
-Duration: 1 hour 55 minutes 46.02 seconds (for a single image!)
-
-**System:**
-
-* CPU: Intel Core i5-4570 CPU @ 3.20GHz × 4
-* RAM: 8GB
-* OS: Fedora 27 (Linux kernel 4.16.6)
-* Node.js: 8.11.1
-
-## Observations
-
-It takes less time for sizes that are powers of 2 (such as 512x512), but it still takes too long.
-
 ## Image source
 
-https://openclipart.org/detail/172385/lipstick (License: CC0)
+https://openclipart.org/detail/193083/simple-key (License: CC0), modified to add a height and a width
