@@ -10,8 +10,8 @@ run()
 
 async function run() {
     try {
-        await sharp('./image.svg')
-            .resize(512, 512)
+        await sharp('./image.svg', { density: 300 })
+            .resize(512, 512, { fit: 'contain', background: { r: 0, g: 0, b: 0, alpha: 0 } })
             .png()
             .toFile('out.png')
     } catch (err) {
